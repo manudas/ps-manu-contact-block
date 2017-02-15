@@ -1,0 +1,304 @@
+#backOfficeCallmeWindow{
+	padding: 5px; 
+	position: fixed; 
+	bottom: 0; 
+	left: 5px; 
+	width: 30%; 
+	height: auto; 
+	border: 1px solid #E4567B; 
+	border-radius: 5px; 
+	background: #E4567B;
+}
+
+#minimize_button{
+	position:absolute; 
+	top:-3px; 
+	right:-3px; 
+	background-color: #7E950F; 
+	border-radius: 5px; 
+	width: 2ex; 
+	height: 2ex; 
+	text-align: center; 
+	color:white; 
+	cursor: pointer;
+}
+
+.btAdminCallMePlease{
+	border: 1px solid black; 
+	border-radius: 5px;
+	color: white;
+}
+
+.elementoSombreado:hover{
+	box-shadow: 3px 2px 20px 5px rgba(0,0,0,0.75);
+}
+
+.btAdminCallMePleaseRed{
+	background-color: #A9181E;
+}
+
+.btAdminCallMePleaseGreen{
+	background-color: #9CC92A;
+}
+
+.adminInputInfoCallMePlease{
+	width:32%; 
+	background-color: transparent; 
+	color: white; 
+	border: 1px solid black;
+	
+}
+
+.contenedorSolicitud{
+	position: relative;
+    display: inline-block;
+}
+
+.contenedorOpcionesSolicitud{
+	display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #ff84c1;
+	height: 150%;
+    border-radius: 5px;
+}
+.contenedorOpcionesSolicitud .infoContainer {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	
+	/* box-shadow: 3px 2px 20px 5px rgba(0,0,0,0.75); */
+	
+}
+
+.contenedorSolicitud:hover .contenedorOpcionesSolicitud {
+    display: flex;
+}
+
+#callListContainer{
+	margin-top: 5px;
+}
+
+.masterMoreOptionsBt {
+	width: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btOpciones {
+	width: 30%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 1%;
+}
+
+.btMoreOptions {
+	display: inline-block;
+	margin-left: 1%;
+}
+
+.contenedorMasInfoSolicitud{
+	display: none;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 115%;
+    background-color: #9CC92A;
+    padding: 5px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.capaMasInfo{
+	display: inline-flex;
+	height: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 1%;
+	width: 39%;
+	position: relative;
+}
+
+.capaMasInfo > div {
+	top: 50%;
+	transform: translateY(-50%);
+	width: 300%;
+	position: absolute;
+	height: 100%;
+}
+
+.adminInputOriginURL {
+	width: 100%;
+	padding: 5px;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+.adminInputOriginURL_mitad {
+	width: 50%;
+	padding: 5px;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+.adminInputEmployee {
+	width: 50%;
+	padding: 5px;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+.contenedorOpcionesSolicitud:hover .infoContainer {
+    display: flex;
+}
+
+.capaMasInfo:hover .contenedorMasInfoSolicitud {
+	display: flex;
+}
+.labelBuscar {
+	width: 22%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.btMoreOptions1 {
+	width: 8%;
+}
+.btMoreOptions2 {
+	width: 23%;
+}
+.btMoreOptions3 {
+	width: 18%;
+}
+.btMoreOptions4 {
+	width: 29%;
+}
+
+.isBeingAttendedAnimationClass{
+	animation-name: blink;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {  
+	0% { 
+		/*opacity: 1.0;*/
+		background-color: #E4567B;
+	}
+	50% {
+		/*opacity: 0.0;*/
+		background-color: #A9181E;
+	}
+	100% {
+		/*opacity: 1.0;*/
+		background-color: #E4567B;
+	}
+}
+
+.contenedorMasInfoSolicitud .commentContainer {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	left: 0;
+}
+
+.contenedorMasInfoSolicitud:hover .commentContainer {
+    display: flex;
+}
+
+.commentContainer .controlComentario {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #E4567B; 
+	border-radius: 5px; 
+	background: #E4CA17;
+	left: 0;
+}
+
+.commentContainer:hover .controlComentario {
+    display: flex;
+}
+
+
+
+.twoButtonsOptionComments {
+	width: 32%;
+	box-sizing: border-box;
+
+}
+
+.oneButtonOptionComment {
+	width: 20%;
+	box-sizing: border-box;
+
+}
+
+.modifiersWithTwoButtons {
+	width: 53%;
+}
+
+.modifiersWithOneButton {
+	width: 65%;
+}
+
+
+.modifierCommentOptions{
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+}
+
+.modifiersOptionsComments{
+	padding-left: 1%;
+	box-sizing: border-box;
+	justify-content: flex-end;
+    /* padding-right: 1%; */
+   	display: flex;
+}
+
+.labelComment{
+	margin-top: auto!important;
+	margin-bottom: auto!important;
+}
+
+.labelCommentButtons{
+	width: 15%;
+	margin-bottom: auto!important;
+    margin-top: auto!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#commentTextArea {
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.commentContainer input {
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.controlComentario form {
+	display: flex;
+	width: 100%;
+}
+
+.contenedorMasInfoSolicitud form {
+	display: flex;
+	width: 100%;
+}
+
+#commentDialog {
+	display: none;
+}

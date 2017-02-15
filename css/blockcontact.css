@@ -1,0 +1,810 @@
+.shop-phone {
+  float: left;
+  /*padding: 5px 0 10px 10px;*/
+  padding: 5px 0 10px 0px;
+  /* padding: 0px 0 10px; */
+  left: 0;
+  width: 100%;
+  line-height: 18px; }
+  @media (max-width: 767px) {
+    .shop-phone {
+      display: none; } }
+  .shop-phone i {
+    font-size: 21px;
+    line-height: 21px;
+    color: #fff;
+    padding-right: 7px; }
+  .shop-phone strong {
+    color: #fff; }
+  @media (max-width: 991px) {
+    .shop-phone.is_logged {
+      display: none; } }
+
+#contact-link {
+  float: right;
+  border-left: 1px solid #F0C26C; }
+  @media (max-width: 479px) {
+    #contact-link {
+      text-align: center; } }
+  #contact-link a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 10px 11px 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    line-height: 18px; }
+    @media (max-width: 479px) {
+      #contact-link a {
+        font-size: 11px;
+        padding-left: 5px;
+        padding-right: 5px; } }
+    #contact-link a:hover, #contact-link a.active {
+      background: #2b2b2b; }
+  @media (max-width: 767px) {
+    #contact-link.is_logged {
+      display: none; } }
+
+@media (max-width: 767px) {
+  #contact_block {
+    margin-bottom: 20px; } }
+#contact_block .label {
+  display: none; }
+#contact_block .block_content {
+  color: #888888; }
+#contact_block p {
+  margin-bottom: 4px; }
+#contact_block p.tel {
+  font: 400 17px/21px Arial, Helvetica, sans-serif;
+  color: #333;
+  margin-bottom: 6px; }
+  #contact_block p.tel i {
+    font-size: 25px;
+    vertical-align: -2px;
+    padding-right: 10px; }
+
+/*# sourceMappingURL=blockcontact.css.map */
+
+/* MODIFICACIONES DE MANU PARA CALLME PLEASE DE CORONAFUNERAL.COM */
+
+#container-callme-please {
+    overflow:hidden;
+	padding: 9px 0 0 0;
+	/* margin-left: 7px; */
+	/* margin-bottom: 10px; */
+	/* float: left; */
+	/* text-align:center;*/
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	border-left: 1px solid #f0c26c;
+	border-right: 1px solid #f0c26c;
+	height: 37px;
+}
+
+#one-callme-please { 
+    z-index: 1;
+	width:300px;
+	height:13px;
+	display:inline-block;
+	font-family: NotoSans;
+	text-align: center;
+}
+
+#two-callme-please {
+	margin-top: 10px;
+    z-index: -1;
+    max-height: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#callme-menu-container {
+	width: 300px;
+	background-color: #f0c26c;
+	border-radius: 5px;
+	padding-left: 7px;
+	text-align: left;
+	/* para centrar a partir de aqu� */
+	width: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	/* fin de centrado */
+}
+
+.buttom_call-me-please {
+	cursor: pointer;
+}
+
+#bt_enviar-callme-please{
+	margin-bottom: 10px;
+}
+
+#close_div-callme-please{
+	text-align: right;
+}
+#close_buttom-callme-please{
+	color: white;
+	background-color:#8B2323;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 1.2em;
+	visibility:hidden;
+	z-index: 1;
+	margin-right: 3px;
+}
+
+.posicion_relativa {
+	position: relative;
+}
+
+.posicion_absoluta {
+	position: absolute;
+}
+
+.texto {
+	left: 0;
+	/* font-size: 18px !important; */
+	font-family: NotoSans !important;
+	color: #FFFFFF !important;
+	width: 100% !important;
+}
+
+#contact-link{
+	width: 150px;
+	height: 37px;
+	overflow: hidden;
+}
+
+
+/* Inicio animaciones CSS3 por keyframe */
+
+/* bounceInLeft para texto 1: Animaci�n te llamamos - abierto */
+.bounceInLeft-Out {
+	-webkit-animation-name: bounceInLeft-Out;
+	animation-name: bounceInLeft-Out;
+	-webkit-animation-duration: 9s;
+	animation-duration: 9s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounceInLeft-Out {
+		0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	6.6% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	9.9% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	16.5% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+	23.1% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	25.74%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	29.04%{
+		
+	}
+	30.36%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	33%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	33.66%{
+		
+	}
+	66%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+@keyframes bounceInLeft-Out {
+			0%, 60%, 75%, 90%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	6.6% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	9.9% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	16.5% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+	23.1% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	25.74%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	29.04%{
+		
+	}
+	30.36%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	33%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	33.66%{
+		
+	}
+	66%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+/* fin bounceInLeft para texto 1 */
+
+/* bounceInLeft para texto 2 */
+.bounceInLeft-Out2 {
+	-webkit-animation-name: bounceInLeft-Out2;
+	animation-name: bounceInLeft-Out2;
+	-webkit-animation-duration: 9s;
+	animation-duration: 9s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounceInLeft-Out2 {
+	0%, 75%, 85%, 95%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	35% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	40% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	44% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+		}
+	46% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	50%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	54%{
+		
+	}
+	58%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	60%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+@keyframes bounceInLeft-Out2 {
+	0%, 75%, 85%, 95%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	35% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	40% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	44% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+		}
+	46% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	50%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	54%{
+		
+	}
+	58%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	60%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+/* fin bounceInLeft para texto 2 */
+
+
+/* bounceInLeft para texto 3 */
+.bounceInLeft-Out3 {
+	-webkit-animation-name: bounceInLeft-Out3;
+	animation-name: bounceInLeft-Out3;
+	-webkit-animation-duration: 9s;
+	animation-duration: 9s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounceInLeft-Out3 {
+	0%, 75%, 85%, 95%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	40% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	65% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+		}
+	80% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	82%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	88%{
+		
+	}
+	98%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+@keyframes bounceInLeft-Out3 {
+	0%, 75%, 85%, 95%, 100% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	40% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+	65% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+		}
+	80% {
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	82%{
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9);
+	}
+	88%{
+		
+	}
+	98%{
+		opacity: 1;
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+}
+/* fin bounceInLeft para texto 3 */
+
+/* fin de animaci�n te llamamos - abierto */
+
+/* animaci�n tel�fono - contactar */
+
+/* animaci�n animacion_telefono_zoomInLeft_zoomOutDown */
+@-webkit-keyframes animacion_telefono_zoomInLeft_zoomOutDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	24%{
+		-webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);		
+	}
+	41%{
+		-webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+	}
+	42% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+@keyframes animacion_telefono_zoomInLeft_zoomOutDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	24%{
+		-webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);		
+	}
+	41%{
+		-webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+	}
+	42% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+/* fin de animaci�n animacion_telefono_zoomInLeft_zoomOutDown */
+
+
+/* animacion animacion_contactar_zoomInRight_zoomOutDown */
+
+@-webkit-keyframes animacion_contactar_zoomInRight_zoomOutDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	64%{
+		-webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);		
+	}
+	91%{
+		-webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+	}
+    98% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }	
+}
+@keyframes animacion_contactar_zoomInRight_zoomOutDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+	64%{
+		-webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);		
+	}
+	91%{
+		-webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+		-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+		animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+	}
+    98% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }	
+}
+/* fin de animaci�n animacion_contactar_zoomInRight_zoomOutDown */
+
+
+/* clases de animaci�n para telefono */
+.animacion_telefono_zoomInLeft_zoomOutDown {
+	
+	animation-delay: 0s;
+    -webkit-animation-delay: 0s;	
+	
+	-webkit-animation-duration: 12s;
+    animation-duration: 12s;
+	
+    -webkit-animation-name: animacion_telefono_zoomInLeft_zoomOutDown;
+    animation-name: animacion_telefono_zoomInLeft_zoomOutDown;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	
+}
+
+.animacion_contactar_zoomInRight_zoomOutDown {
+	
+	animation-delay: 0s;
+    -webkit-animation-delay: 0s;	
+	
+	-webkit-animation-duration: 12s;
+    animation-duration: 12s;
+	
+    -webkit-animation-name: animacion_contactar_zoomInRight_zoomOutDown;
+    animation-name: animacion_contactar_zoomInRight_zoomOutDown;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	
+}
+
+/* fin de clases de animaci�n para tel�fono */
+
+/* fin de animaci�n tel�fono - contactar */
+
+/* Fin de animaciones CSS3 por keyframe */
+
+/* FORMATO ADAPTABLES DEL TEXTO Y CONTENEDORES DEL M�DULO, POR MANU */
+.texto_parrafo_barra_contacto {
+    font-size: 2.3REM!important;
+}
+.texto_parrafo_barra_small {
+    font-size: 2REM!important;
+}
+@media (max-width: 767px) {
+
+    .texto_parrafo_barra_contacto {
+        font-size: 1.5REM!important;
+    }
+	
+	.texto_parrafo_barra_small {
+		font-size: 1.5REM!important;
+	}
+	
+	#container-callme-please {
+		width: 200px;
+	}
+	
+	#one-callme-please {
+		width: 200px;
+	}
+	#callme-menu-container {
+		width: 200px;
+	}
+	
+	#contact-link a {
+		font-size: inherit;
+	}
+}
+/* FIN DE FORMATO ADAPTABLES DEL TEXTO Y CONTENEDORES DEL M�DULO, POR MANU */
