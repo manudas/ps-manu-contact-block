@@ -1,6 +1,6 @@
 {function name=comentarios_control}
 	<div class='controlComentario elementoSombreado'>
-		<form target="_blank" method="get" action="{$callmepleasecomments_path}" onSubmit="submitSearchForComment({$solicitud_llamada->inquiry_ID})">
+		<form target="_blank" method="post" action="{$callmepleasecomments_path}" onSubmit="submitSearchForComment({$solicitud_llamada->inquiry_ID})">
 			<label class="labelComment labelCommentButtons">Comentarios</label>
 			{if $comentarios}
 				<div class="twoButtonsOptionComments">
@@ -18,6 +18,7 @@
 					<input name="callme_please_commentsFilter_a!ip" id="IP_input_comment_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$inquiry_data->ip}" disabled/>
 					<input name="callme_please_commentsFilter_a!session_id" id="SESSION_input_comment_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$inquiry_data->session_id}" disabled/>
 					<input name="callme_please_commentsFilter_a!customer_phone" id="PHONE_input_comment_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$solicitud_llamada->customer_phone}" disabled/>
+					<input name="token" type="hidden" value="{$comment_token}" />
 					<label class="labelComment">{l s='IP'}&nbsp</label><input class="modifierCommentOptions" type='checkbox' id="IP_checkbox_{$solicitud_llamada->inquiry_ID}"/>&nbsp;
 					<label class="labelComment">{l s='Session'}&nbsp</label><input class="modifierCommentOptions" type='checkbox' id="SESSION_checkbox_{$solicitud_llamada->inquiry_ID}" checked/>&nbsp;
 					<label class="labelComment">{l s='Phone'}&nbsp</label><input class="modifierCommentOptions" type='checkbox' id="PHONE_checkbox_{$solicitud_llamada->inquiry_ID}"/>&nbsp;
@@ -118,7 +119,7 @@
 						 
 						 
 					
-					<form target="_blank" method="get" action="{$callmeplease_edit_path}" onsubmit="submitSearchForCustomer(this, {$solicitud_llamada->inquiry_ID})">
+					<form target="_blank" method="post" action="{$callmeplease_edit_path}" onsubmit="submitSearchForCustomer(this, {$solicitud_llamada->inquiry_ID})">
 						<label class="labelBuscar">{l s='Buscar por...'}</label>
 						<button onclick="registerButtonInSearchForCustomerFrom(this.form, this)" type='submit' id='ip_{$solicitud_llamada->inquiry_ID})' class="btMoreOptions elementoSombreado btMoreOptions1">{l s='IP'}</button>
 						<button onclick="registerButtonInSearchForCustomerFrom(this.form, this)" type='submit' id='session_{$solicitud_llamada->inquiry_ID})' class="btMoreOptions elementoSombreado btMoreOptions2">{l s='Session ID'}</button>
@@ -129,6 +130,7 @@
 						<input name='callme_pleaseFilter_cmpd!ip' id="IP_input_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$inquiry_data->ip}" disabled/>
 						<input name='callme_pleaseFilter_cmpd!session_id' id="SESSION_input_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$inquiry_data->session_id}" disabled/>
 						<input name='callme_pleaseFilter_a!customer_phone' id="PHONE_input_{$solicitud_llamada->inquiry_ID}" type="hidden" value="{$solicitud_llamada->customer_phone}" disabled/>
+						<input name="token" type="hidden" value="{$call_token}"/>						
 					</form>
 				</div>	
 			</div>

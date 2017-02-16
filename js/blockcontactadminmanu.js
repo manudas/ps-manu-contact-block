@@ -513,7 +513,7 @@ function submitSearchForComment(id_inquiry) {
 			$("#PHONE_input_comment_" + id_inquiry).prop('disabled', true);
 		}
 	}
-	return false;
+	return true;
 }
 
 function submitSearchForCustomer(form, id_inquiry) {
@@ -532,7 +532,7 @@ function submitSearchForCustomer(form, id_inquiry) {
 	} else {
 		$("#PHONE_input_" + id_inquiry).prop('disabled', true);
 	}
-	return false;
+	return true;
 }
 
 function registerButtonInSearchForCustomerFrom(form, button) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
 	<name>blockcontactmanu</name>
-	<displayName><![CDATA[Manu's Contact block]]></displayName>
+	<displayName><![CDATA[Contact block - Bloque de contacto de Manu + CallmePlease]]></displayName>
 	<version><![CDATA[1.4.0]]></version>
 	<description><![CDATA[Allows you to add additional information about your store&#039;s customer service.]]></description>
 	<author><![CDATA[Manu]]></author>

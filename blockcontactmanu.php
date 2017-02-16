@@ -409,8 +409,9 @@ class Blockcontactmanu extends Module
 		// $path = $this->context->link->getModuleLink('blockcontactmanu','AdminCallmePleaseController');
 		$params['module'] = 'blockcontactmanu';
 		$params['controller'] = 'FrontCallmePlease';
-		// $path = Context::getContext()->link->getModuleLink('blockcontactmanu','FrontCallmePlease');
-		$fullCallMePath = $callMePleaseHost.Dispatcher::getInstance()->createUrl('module', /* $id_lang*/ null, $params, /*force routes */ true, '', /* $id_shop*/ null);
+		//$path = Context::getContext()->link->getModuleLink('blockcontactmanu','FrontCallmePlease');
+		$rewriting = (int)Configuration::get('PS_REWRITING_SETTINGS');
+		$fullCallMePath = $callMePleaseHost.Dispatcher::getInstance()->createUrl('module', /* $id_lang*/ null, $params, /*force routes */ $rewriting, '', /* $id_shop*/ null);
 		// $fullCallMePath = $callMePleaseHost.$path;
 		return $fullCallMePath;
 	}
@@ -702,10 +703,10 @@ class Blockcontactmanu extends Module
 
 		// if (!$this->isCached($tpl.'.tpl', $this->getCacheId())) NO PODEMOS CACHEAR PUES VA A SER DINAMICO
 
-			if (empty($callMePleaseHost)) { // est� vacio ==> nuestro host es el host que ejecuta este archivo
+			if (empty($callMePleaseHost)) { // está vacio ==> nuestro host es el host que ejecuta este archivo
 				$pending_calls_array = $this->getPendingInquiryCalls();
 			}
-			else { // las llamadas se cargar�n con el primer request xhr
+			else { // las llamadas se cargarán con el primer request xhr
 				$pending_calls_array = null;
 			}
 			
@@ -800,6 +801,7 @@ class Blockcontactmanu extends Module
 			// 'inquiry_admin_code' => $this->getInquiryCode($inquiryData)
 			foreach ($inquiryDataList as $inquiryData){
 				$code = $this->getInquiryCode($inquiryData);
+				// die($code);
 				$inquiryData -> inquiry_admin_code = $code;
 				$inquiryData -> hash = md5(serialize($code));
 			}
@@ -1034,6 +1036,7 @@ class Blockcontactmanu extends Module
         return $result;
     }
     
+    
     public function getInquiryCode($inquiry_object){
     	
     	global $smarty;
@@ -1050,6 +1053,7 @@ class Blockcontactmanu extends Module
     	$fullCallMePath = $this->getAjaxControllerPath();
     	$callmepleasecomments_path = $this->getCommentControllerLink();
     	$callmeplease_edit_path = $this -> getCallControllerLink();
+    	// $callmeplease_edit_path = "//google.es";
     	
     	$commentOBJ = $this->getCommentObject($inquiry_object);
     	
@@ -1061,6 +1065,8 @@ class Blockcontactmanu extends Module
     	}
     	
     	$smarty->assign(array(
+    			'comment_token' => Tools::getAdminTokenLite('AdminCallmePleaseComments'),
+    			'call_token' => Tools::getAdminTokenLite('AdminCallmePlease'),
     			'callmepleasecomments_path' => $callmepleasecomments_path,
     			'solicitud_llamada' => $inquiry_object,
     			'callmeplease_path' => $fullCallMePath,
@@ -1124,6 +1130,7 @@ class Blockcontactmanu extends Module
     		else { // el protocolo no se ha especificado en el host destino, añadimos protocolo relativo
     			$fullCallMePath = '//'.$fullCallMePath;
     		}
+    		
     	}
     	else {
     		$fullCallMePath = $path;
@@ -1159,6 +1166,7 @@ class Blockcontactmanu extends Module
     		else { // el protocolo no se ha especificado en el host destino, añadimos protocolo relativo
     			$fullCallMeCommentPath = '//'.$fullCallMeCommentPath;
     		}
+    		
     	}
     	else {
     		$fullCallMeCommentPath = $path;

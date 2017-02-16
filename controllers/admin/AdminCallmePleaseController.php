@@ -522,7 +522,8 @@ class AdminCallmePleaseController extends ModuleAdminController {
 		
 		if (empty($session_id)) {
 			//  si está vacío asumimos que ha sido rellenado desde el formulario sin meter este dato: metemos el del admin que lo insertó
-			$session_id = $session_id;
+			session_start();
+			$session_id = session_id();
 		}
 		
 		$customer_phone = Tools::getValue ( 'customer_phone' );
