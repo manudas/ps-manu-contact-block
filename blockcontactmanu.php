@@ -500,7 +500,7 @@ class Blockcontactmanu extends Module
 						'desc' => $this->l('Enter here your customer service contact details.'),
 
 					),
-					
+					/*
 					array(
 
 						'type' => 'radio',
@@ -550,7 +550,7 @@ class Blockcontactmanu extends Module
 							'desc' => $this->l('Si el campo anterior est� vac�o y este es el dominio encargado de centralizar las solicitudes, rellene el siguiente campo con una lista de los dominios autorizados, separados por coma'),
 					
 					),
-
+*/
 				),
 
 				'submit' => array(

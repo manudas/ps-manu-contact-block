@@ -2,6 +2,8 @@
 
 $(document).ready(function() { 
 	// $('#container-callme-please').click(function() {
+		
+	/*
 	$('#one-callme-please').click(function() {
 		$('#container-callme-please').css('height', 'auto');
 		var contentHeight = $('#two-callme-please').children('div').outerHeight();
@@ -10,6 +12,7 @@ $(document).ready(function() {
 		$('#two-callme-please').css('overflow', 'visible');
 		$('#close_buttom-callme-please').css('visibility', 'visible');
 	});
+	*/
 
 	$('#close_buttom-callme-please').click(function(e){
 		close_call_form(e);

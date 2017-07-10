@@ -6,6 +6,10 @@
   left: 0;
   width: 100%;
   line-height: 18px; }
+
+  .shop-phone a{
+	  transform: translateY(-5px);
+  }
   @media (max-width: 767px) {
     .shop-phone {
       display: none; } }
@@ -153,7 +157,7 @@
 }
 
 #contact-link{
-	width: 150px;
+	width: 180px;
 	height: 37px;
 	overflow: hidden;
 }
@@ -777,10 +781,10 @@
 
 /* FORMATO ADAPTABLES DEL TEXTO Y CONTENEDORES DEL M�DULO, POR MANU */
 .texto_parrafo_barra_contacto {
-    font-size: 2.3REM!important;
+    font-size: 1.8REM!important;
 }
 .texto_parrafo_barra_small {
-    font-size: 2REM!important;
+    font-size: 1.7REM!important;
 }
 @media (max-width: 767px) {
 

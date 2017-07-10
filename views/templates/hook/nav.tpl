@@ -25,7 +25,7 @@
 <div id="contact-link">
 	<div class="posicion_relativa">
 		<a class="animacion_contactar_zoomInRight_zoomOutDown posicion_absoluta contact_division texto texto_parrafo_barra_contacto" href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontactmanu'}">{l s='Contact us' mod='blockcontactmanu'}</a>
-
+{if $callmeplease_activated == '1'}
 	{if $showntelnumber}
 		{if $telnumber}
 			<span class="shop-phone animacion_telefono_zoomInLeft_zoomOutDown posicion_absoluta texto_parrafo_barra_small" style="display: initial">
@@ -40,6 +40,18 @@
 			</span>
 		{/if}
 	{/if}
+{else}
+	<style>
+		.animacion_telefono_zoomInLeft_zoomOutDown {
+			-webkit-animation-duration: 1s !important;
+			animation-duration: 1s !important;
+		}
+		.animacion_contactar_zoomInRight_zoomOutDown {
+			-webkit-animation-duration: 5s !important;
+			animation-duration: 5s !important;
+		}
+	</style>
+{/if}	
 	</div>
 </div>
 
@@ -48,6 +60,7 @@
 </script>
 
 {if $callmeplease_activated == '1'}
+{*}
 	<div id="container-callme-please">
 		<a class="posicion_relativa" id="one-callme-please" title="{l s='Click here to receive a call from us' mod='blockcontactmanu'}">
 			<span class="posicion_absoluta texto bounceInLeft-Out texto_parrafo_barra_contacto">{l s='Llamada GRATUITA' mod='blockcontactmanu'}</span>
@@ -79,4 +92,5 @@
 			</div>
 		</div>
 	</div>
+{*}	
 {/if}
