@@ -25,7 +25,7 @@
 <div id="contact-link">
 	<div class="posicion_relativa">
 		<a class="animacion_contactar_zoomInRight_zoomOutDown posicion_absoluta contact_division texto texto_parrafo_barra_contacto" href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontactmanu'}">{l s='Contact us' mod='blockcontactmanu'}</a>
-{if $callmeplease_activated == '1'}
+
 	{if $showntelnumber}
 		{if $telnumber}
 			<span class="shop-phone animacion_telefono_zoomInLeft_zoomOutDown posicion_absoluta texto_parrafo_barra_small" style="display: initial">
@@ -40,18 +40,7 @@
 			</span>
 		{/if}
 	{/if}
-{else}
-	<style>
-		.animacion_telefono_zoomInLeft_zoomOutDown {
-			-webkit-animation-duration: 1s !important;
-			animation-duration: 1s !important;
-		}
-		.animacion_contactar_zoomInRight_zoomOutDown {
-			-webkit-animation-duration: 5s !important;
-			animation-duration: 5s !important;
-		}
-	</style>
-{/if}	
+	
 	</div>
 </div>
 

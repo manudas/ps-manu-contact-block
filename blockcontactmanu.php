@@ -649,7 +649,7 @@ class Blockcontactmanu extends Module
 	
 	public function hookDisplayBackOfficeHeader(){
 		// die('añadir js para backoffice');
-		
+		/*
 		$this->context->controller->addCSS(($this->_path).'css/blockcontactadminmanu.css', 'all');
 		$this->context->controller->addJS(($this->_path).'js/blockcontactadminmanu.js');
 		
@@ -660,33 +660,14 @@ class Blockcontactmanu extends Module
 		$this->context->controller->addJqueryUI('ui.effect');
 		$this->context->controller->addJqueryUI('ui.effect-explode');
 		$this->context->controller->addJqueryUI('ui.effect-blind');
-
+		*/
 	}
 	
 	
 	public function hookDisplayBackOfficeTop($params){
 		// die('añadir el tpl callList.tpl. PEnsar si este puede cachearse, probablemente no');
+		/*
 		global $smarty;
-		/*
-		$callMePleaseHost = Configuration::get('CALLMEPLEASE_HOST');
-		if (substr($callMePleaseHost, -1) == '/'){
-			$callMePleaseHost = substr($callMePleaseHost, 0, -1);
-		}
-		$_admin_folder = Configuration::get('CALLMEPLEASE_ADMIN_FOLDER');
-		if (substr($_admin_folder, -1) == '/'){
-			$_admin_folder = substr($_admin_folder, 0, -1);
-		}
-		*/
-		// $path = $this->context->link->getModuleLink('blockcontactmanu','AdminCallmePleaseController');
-		/*
-		$path = $this->context->link->getAdminLink('AdminCallmePlease');
-		if (!empty($callMePleaseHost) && (!empty($_admin_folder))){
-			$fullCallMePath = $callMePleaseHost.'/'.$_admin_folder.'/'.$path;
-		}
-		else {
-			$fullCallMePath = $path;
-		}
-		*/
 		
 		$employee = $this -> context -> employee -> firstname . ' ' . $this -> context -> employee -> lastname;
 		
@@ -741,6 +722,7 @@ class Blockcontactmanu extends Module
 			
 		Tools::clearCache(null, $tpl.'.tpl');
 		return $this->display(__FILE__, $tpl.'.tpl');
+		*/
 	}
     
 	public function getPendingInquiryCalls(){
